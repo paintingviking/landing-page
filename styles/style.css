@@ -4,6 +4,8 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    max-width: 1500px;
 }
 
 ul {
@@ -15,11 +17,22 @@ a {
     text-decoration: none;
 }
 
+.hero button {
+    border-width:0;
+}
+button {
+    color: #E5E7EB;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
 .hero, .header {
     background-color: #1f2937;
 }
 
-header div {
+.header nav {
     color: #F9FAF8;
     font-size: 24px;
 }
@@ -29,7 +42,13 @@ header div {
     flex: 1;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 60px;
     
+}
+
+.nav-list {
+    display: flex;
+    gap: 50px;
 }
 
 .main-text {
@@ -39,17 +58,36 @@ header div {
     color: #F9FAF8;
 }
 
+.secondary-text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.information {
+    padding-top: 60px;
+    display: flex;
+}
+
+.info-text {
+    flex: 1;
+}
+
+.info-box {
+    flex: 1;
+}
+
 .quote {
     background-color: #E5E7EB;
 }
 
 .main-quote {
+    padding-top: 80px;
     font-size: 36px;
     font-weight: light;
     font-style: italic;
     color: #1f2937;
 }
 
-.footer, .button {
+.footer, button {
     background-color: #3882f6;
 }
