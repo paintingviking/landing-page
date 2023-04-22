@@ -14,12 +14,25 @@ ul {
 }
 
 a {
+    color: #E5E7EB;
     text-decoration: none;
 }
 
+.hero {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: space-between;
+}
 .hero button {
     border-width:0;
 }
+
+.hero-image {
+    display: flex;
+}
+
 button {
     color: #E5E7EB;
     border-color: white;
@@ -33,7 +46,6 @@ button {
 }
 
 .header nav {
-    color: #F9FAF8;
     font-size: 24px;
 }
 
@@ -48,7 +60,7 @@ button {
 
 .nav-list {
     display: flex;
-    gap: 50px;
+    gap: 40px;
 }
 
 .main-text {
@@ -59,6 +71,7 @@ button {
 }
 
 .secondary-text {
+    flex: 1;
     font-size: 18px;
     color: #E5E7EB;
 }
