@@ -23,14 +23,6 @@ a {
     flex-direction: column;
 }
 
-button {
-    color: #E5E7EB;
-    border-color: white;
-    border-width: 2px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    font-size: 18px;
-}
 
 /*Header part*/
 .hero, .header {
@@ -103,45 +95,100 @@ button {
     height: 220px;
 }
 
+.hero button {
+    background-color: #3882f6;
+    color: #E5E7EB;
+    border-width: 0px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
 
 /*Main content*/
 
-.information {
-    padding-top: 60px;
-    margin: 20px;
-    display: flex;
-    width: 800px;
+.content {
+    align-content: center;
 
 }
 
-.info-text {
+
+.content-info {
     display: flex;
     justify-content: center;
-    font-size: large;
-}
-
-.info-box {
-    display: flex;
-    padding: 16px;
-    margin: 16px;
-    width: 150px;
+    flex-wrap: wrap;
     
 }
 
-.quote {
-    background-color: #E5E7EB;
+.content-info img {
+    width: 250px;
+    height: 250px;
+    margin: 5px 15px 1px 5px;
 }
 
-.main-quote {
-    padding-top: 80px;
+/*Quote content */
+
+.quote {
+    display: flex;
+    background-color: #E5E7EB;
+    flex-direction: column;
+    padding: 0px 200px;
+    font-family: 'roboto';
+}
+
+.quote p {
+    
+    padding-top: 30px;
     font-size: 36px;
-    font-weight: light;
     font-style: italic;
     color: #1f2937;
 }
 
+.quote b {
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+
+/*Sign up content*/
+
+.sign-up {
+    display: flex;
+    background-color: #3882f6;
+    color: #E5E7EB;
+    padding: 10px 80px;
+    margin: 50px 200px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.sign-items {
+    flex: 1;
+}
+
+.sign-text {
+    text-align: left;
+}
+
+
+.sign-items button {
+    color: #E5E7EB;
+    background-color: #3882f6;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+
 /*Footer content*/
 
-.footer, button {
-    background-color: #3882f6;
+.footer {
+    padding: 10px;
+    background-color:#1f2937;
+    font-size: 12px;
+    font-weight: lighter;
+    color: #F9FAF8;
 }
