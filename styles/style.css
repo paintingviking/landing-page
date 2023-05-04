@@ -1,11 +1,11 @@
+/*Basic Setup */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 1500px;
+    text-align: center;
+    
 }
 
 ul {
@@ -18,6 +18,11 @@ a {
     text-decoration: none;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
 button {
     color: #E5E7EB;
     border-color: white;
@@ -26,6 +31,8 @@ button {
     margin-bottom: 20px;
     font-size: 18px;
 }
+
+/*Header part*/
 .hero, .header {
     background-color: #1f2937;
 }
@@ -43,40 +50,61 @@ button {
     
 }
 
+.header-logo img {
+    margin-right: auto;
+    width: 200px;
+    height: auto;
+}
 .nav-list {
     display: flex;
-    gap: 40px;
+    margin-left: auto;
+    padding: 0px 100px 0px 0px;
 }
+
+.nav-list a {
+    padding: 10px;
+}
+
+/*Hero content*/
 
 .hero {
-    padding: 60px;
     display: flex;
-    flex-wrap: wrap;
-}
-.hero button {
-    border-width:0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    text-align: left;
+
 }
 
-.hero-image {
-    display: flex;
+.hero-content 
+{
+    flex-basis: 500px;
+    text-align: left;
+    margin-right: 30px;
 }
-.main-text {
-    display: flex;
+
+.hero h1 {
     font-size: 48px;
-    padding: 28px;
-    margin: 28px;
-    width: 400px;
-    font-weight: bolder;
+    font-weight: bold;
     color: #F9FAF8;
+    margin: 0;
+
 }
 
-.secondary-text {
+.hero-content p 
+{
     font-size: 18px;
     color: #E5E7EB;
-    padding: 0px;
-    margin: 0px;
-    width: 200px;
 }
+.hero-image img
+{
+    max-width: auto;
+    height: 220px;
+}
+
+
+/*Main content*/
 
 .information {
     padding-top: 60px;
@@ -111,6 +139,8 @@ button {
     font-style: italic;
     color: #1f2937;
 }
+
+/*Footer content*/
 
 .footer, button {
     background-color: #3882f6;
